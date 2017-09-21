@@ -10,14 +10,14 @@ for(i=1;i<=n;i++)
 	{
 	if(p==1)
 		{
-		print(i,n-1);
+		print(i,n);
 		print(i+1,1);
 		printf("\n");
 		}
 	else
 		{
 		print(i+1,1);
-		print(i,n-1);
+		print(i,n);
 		printf("\n");
 		}
 	p=p^1;
