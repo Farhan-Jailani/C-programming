@@ -28,6 +28,8 @@ if(g>10&&g<20)
 	printf("%s",e[n%10-1]);
 else if(g%10==0)
 	printf("%s",t[(g/10)-1]);
+else if(g/10==0&&g%10!=0)
+	printf("%s",a[g%10]);
 else
 	printf("%s %s",t[(g/10)-1],a[g%10]);
 getch();
