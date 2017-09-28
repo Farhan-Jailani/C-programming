@@ -36,7 +36,7 @@ for(i=0;i<n/2;i++)
 
 
 
-	 int jump=jum;
+	 int jump=num-jum%num;
 	 ii=i;
 	jj=i;
 	for(f=0;f<mb;f++)
