@@ -8,13 +8,20 @@ clrscr();
 int n;
 scanf("%d",&n);
 int dig=digit(n);
+char d[20];
+int j=0,i;
+char al[]={'z','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y'};
 while(dig--)
 	{
 	int a=n%26;
-	printf("%c",64+(a%27));
+	if(a==0)
+		n=n-26;
+	d[j++]=al[a];
 	n=n/26;
 
 	}
+for(i=j-1;i>=0;i--)
+	printf("%c",d[i]);
 getch();
 return 0;
 }
